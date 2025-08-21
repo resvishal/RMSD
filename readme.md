@@ -5,7 +5,7 @@ The script also performs a **least-squares alignment** before RMSD calculation, 
 
 ---
 
-## ✨ Features
+## Features
 - Reads two **PDB files** and extracts only **Cα atoms**.
 - Performs **centroid alignment**.
 - Uses the **Kabsch algorithm** for optimal superposition.
@@ -15,23 +15,30 @@ The script also performs a **least-squares alignment** before RMSD calculation, 
 ---
 
 ## 📂 Repository Structure
-📦 RMSD-Align-C
-┣ 📜 rmsd.c # Main source code
-┣ 📜 4bfz.pdb # Example structure 1
-┣ 📜 4bfu.pdb # Example structure 2
-┣ 📜 README.md # Documentation
+
+ RMSD-Align-C
+┣  rmsd.c # Main source code
+┣  4bfz.pdb # Example structure 1
+┣  4bfu.pdb # Example structure 2
+┣  README.md # Documentation
 
 
 ---
 
-## ⚡ Installation & Compilation
+##  Installation & Compilation
 Compile with `gcc` (use `-std=c99` flag to allow modern C loops):
 ```bash
 gcc -std=c99 -o rmsd rmsd.c -lm
 
+
+--- 
+
+
 ## **Run the program with two pdb filenames**
 
 ./rmsd 4bfz.pdb 4bfu.pdb
+
+---
 
 ## **Example output**
 Read 288 Cα atoms from 4bfz.pdb
